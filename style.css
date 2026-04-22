@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #e6f2ff);
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #2a4d8f;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #2a4d8f;
+  margin-top: 20px;
+}
+
+img {
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+Added style.css for site design
