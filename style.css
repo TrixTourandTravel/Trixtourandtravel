@@ -1,35 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #f9f9f9, #e6f2ff);
-  margin: 0;
-  padding: 0;
+.slideshow {
+  position: relative;
+  width: 300px;
+  height: 240px; /* taller to fit captions */
+  margin: 20px auto;
+  overflow: hidden;
 }
-
-nav {
-  background-color: #2a4d8f;
-  padding: 10px;
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
 }
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+.slide.active {
+  opacity: 1;
 }
-
-h1 {
-  color: #2a4d8f;
-  margin-top: 20px;
-}
-
-img {
-  margin: 20px;
+.slide img {
+  width: 100%;
+  height: 80%; /* leave space for caption */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
 }
-
-img:hover {
-  transform: scale(1.05);
+.caption {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2a4d8f;
+  margin-top: 5px;
 }
-Added style.css for site design
+slideshow
